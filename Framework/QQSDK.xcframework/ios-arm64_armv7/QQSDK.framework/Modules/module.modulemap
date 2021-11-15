@@ -1,0 +1,6 @@
+framework module QQSDK {
+  umbrella header "QQSDK.h"
+
+  export *
+  module * { export * }
+}
