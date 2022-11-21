@@ -124,4 +124,9 @@ public extension QQApi {
 
         return SendMessageToQQReq(content: obj)
     }
+
+    static func imageRequest(imageData: Data) -> SendMessageToQQReq {
+        let obj = QQApiImageObject(data: imageData, previewImageData: imageData, title: nil, description: nil)
+        return SendMessageToQQReq(content: obj)
+    }
 }
