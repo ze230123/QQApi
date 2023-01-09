@@ -5,6 +5,7 @@ import QQSDK
 public typealias AuthResult = Result<String, AuthError>
 public typealias QQLoginComplation = (AuthResult) -> Void
 public typealias QQShareComplation = (ShareResult) -> Void
+public typealias QQBaseReq = QQSDK.QQBaseReq
 
 public enum ShareResult {
     case success
